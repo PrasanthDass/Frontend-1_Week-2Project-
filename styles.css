@@ -1,10 +1,10 @@
 /* Variables for easy color changes */
 :root {
-    --primary-color: #000000; /* Black */
-    --secondary-color: #1a1a1a; /* Darker Gray/Black for backgrounds */
-    --accent-color: #ffb700; /* Gold/Yellow for accents and buttons */
-    --text-color: #ffffff; /* White text */
-    --border-color: #444444; /* Subtle border color */
+    --primary-color: #000000;
+    --secondary-color: #1a1a1a;
+    --accent-color: #ffb700;
+    --text-color: #ffffff; 
+    --border-color: #444444;
 }
 
 * {
@@ -39,8 +39,8 @@ body {
 .navbar nav a {
     color: var(--primary-color);
     text-decoration: none;
-    margin-left: 20px; /* Slightly reduced */
-    font-size: 0.95rem; /* Smaller link text */
+    margin-left: 20px;
+    font-size: 0.95rem;
     transition: color 0.3s;
 }
 
@@ -117,7 +117,7 @@ main {
     width: 100%;
     height: auto;
     border-radius: 5px;
-    /* Simulate the image crop seen in the example */
+
     object-fit: cover;
     display: block;
 }
@@ -162,7 +162,6 @@ main {
 
 .submit-button {
     display: block;
-     /* Approximate width based on image */
     margin: 30px auto 0 auto;
     background-color: var(--accent-color);
     color: var(--primary-color);
