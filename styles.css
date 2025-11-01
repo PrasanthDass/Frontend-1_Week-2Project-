@@ -1,0 +1,221 @@
+/* Variables for easy color changes */
+:root {
+    --primary-color: #000000; /* Black */
+    --secondary-color: #1a1a1a; /* Darker Gray/Black for backgrounds */
+    --accent-color: #ffb700; /* Gold/Yellow for accents and buttons */
+    --text-color: #ffffff; /* White text */
+    --border-color: #444444; /* Subtle border color */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* --- Header/Navbar Styling --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px; /* Reduced from 20px 50px */
+    background-color: var(--accent-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.logo {
+    font-size: 1.2rem; /* Reduced from 1.5rem */
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.navbar nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-left: 20px; /* Slightly reduced */
+    font-size: 0.95rem; /* Smaller link text */
+    transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+    color: var(--accent-color);
+}
+
+.login-btn {
+    border: 1px solid var(--accent-color);
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+/* --- Main Content Styling --- */
+main {
+    padding: 20px 50px;
+}
+
+/* --- Hero Section Styling --- */
+.hero-section {
+    display: flex;
+    align-items: flex-start;
+    padding: 50px 0;
+    gap: 40px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.hero-content {
+    flex: 2;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    margin-bottom: 30px;
+    color: #cccccc;
+    max-width: 800px; /* Constrain text width */
+}
+
+.login-button {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 9px 35px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 35px;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #ffcc66;
+}
+
+.hero-image-container {
+    flex: 1;
+    position: relative;
+    max-width: 500px;
+    min-width: 500px;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    /* Simulate the image crop seen in the example */
+    object-fit: cover;
+    display: block;
+}
+
+/* --- Contact Us Section Styling --- */
+.contact-section {
+    padding: 40px 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: var(--accent-color);
+    font-weight: normal;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 35px;
+    outline: none;
+}
+
+.contact-form input::placeholder {
+    color: var(--accent-color);
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row input {
+    flex: 1;
+}
+
+.submit-button {
+    display: block;
+     /* Approximate width based on image */
+    margin: 30px auto 0 auto;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 9px 35px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 35px;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #ffcc66;
+}
+
+/* --- Table Section Styling --- */
+.table-section {
+    padding: 40px 0;
+}
+
+.startup-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    border: 1px solid var(--accent-color);
+}
+
+.startup-table th,
+.startup-table td {
+    padding: 15px;
+    border-left: 1px solid var(--accent-color);
+    border-right: 1px solid var(--accent-color);
+}
+
+.startup-table thead th {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    text-transform: uppercase;
+    border-top: 1px solid var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.startup-table tbody td {
+    color: var(--accent-color);
+    border-top: none;
+    border-bottom: none;
+}
+
+.startup-table tfoot td {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    border-top: 1px solid var(--accent-color);
+    border-bottom: none;
+}
